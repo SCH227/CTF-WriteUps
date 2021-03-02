@@ -1,6 +1,8 @@
 # UGRA CTF 2021
 --------------------------------------
+\
 ## Crypto 150 "Арбатско-Покровская линия?"
+\
 
 https://q.2021.ugractf.ru/tasks/apl
 
@@ -54,20 +56,23 @@ ugra_the_next_station_is_esoteric_programming_1d60ebbb3cef28c1a18ef308912867cf60
 ```
 
 --------------------------------------
+\
 ## Pwn 250 "Антивирус"
-
+\
 https://q.2021.ugractf.ru/tasks/antivirus
 
 I find a page for uploading a file and choosing file extension to be analyzed for an antivirus.
 
 Playing with different inputs in the Multi-form, we find out some interesting output:
-
+\
+\
 ![title](AntiVirus.png)
-
+\
+\
 Playing a bit more we can make the paths coincide so the uploaded file is executed on the server side.
 Creating a single script inside to show what is in /etc/passwd , the flag is there!
-
-
+\
+\
 ![title](winner_pwn.png)
 
 
