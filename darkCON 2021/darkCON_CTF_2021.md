@@ -40,7 +40,8 @@ So, I do another simple snipet for checking what this operation is having as out
 
 
 
-```darkCON{0bfu5c4710ns_v5_4n1m4710ns}
+```
+darkCON{0bfu5c4710ns_v5_4n1m4710ns}
 ```
 
 
