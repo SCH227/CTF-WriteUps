@@ -7,7 +7,8 @@
 
 
 ```
-I've found this rsa implementation, it is quite strange. I have a public/private key and I've also intercepted a ciphertext but infortunately it was not for me, so I can't read it. But I'am really curious, can you decrypt it ? :)
+I've found this rsa implementation, it is quite strange. I have a public/private key and I've also intercepted a ciphertext 
+but infortunately it was not for me, so I can't read it. But I'am really curious, can you decrypt it ? :)
 
 Files:
 
@@ -56,11 +57,15 @@ print(f"Intercepted message : {hex(c)}")
 
 ```
 
-RSA cryptographic strength relies in the known difficulty of solving the mathematical problem of big numbers factorization.
-From 2 primes P and Q, it is computed n (our modulo), and from there, public key e is choosen. Finally, d is calculated.
-Two parties sharing the same modulo n, are practically sharing the same keys, even choosing diferent e, because P and Q are the same for both.
+RSA cryptographic strength relies in the known difficulty of solving the mathematical 
+problem of big numbers factorization.
+From 2 primes P and Q, it is computed n (our modulo), and from there, public key e 
+is choosen. Finally, d is calculated.
+Two parties sharing the same modulo n, are practically sharing the same keys, even 
+choosing diferent e, because P and Q are the same for both.
 &nbsp;
-The great book "Serious Cryptography" by Aumasson, shares this smart code for retrieving P and Q from knowns n, e and d:
+The great book "Serious Cryptography" by Aumasson, shares this smart code for 
+retrieving P and Q from knowns n, e and d:
 
 ```python
 from math import gcd
@@ -90,7 +95,8 @@ print('q = ', q)
 print('phi is ', (p-1)*(q-1))
 ```
 
-Knowing P and Q, it is trivial to derive d' from a different e', and later decrypt the ciphertext
+Knowing P and Q, it is trivial to derive d' from a different e', and later 
+decrypt the ciphertext
 
 
 ```
